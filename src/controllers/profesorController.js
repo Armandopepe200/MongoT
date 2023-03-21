@@ -3,7 +3,7 @@ import Profesores from "../models/Profesores";
 
 export const renderProfesores = async (req, res) => {
     const profesores = await Profesores.find().lean();
-    res.render("index", { profesores : profesores });
+    res.render("index",{ profesores: profesores });
   };
 
 

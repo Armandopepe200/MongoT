@@ -4,9 +4,9 @@ import Profesores from "../models/Profesores";
 
 export const renderAlumnos = async (req, res) => {
     const alumnos = await Alumnos.find().lean();
-    const profesores = await Profesores.find().lean();
     const asignaturas = await Asignaturas.find().lean();
-    res.render("index", { alumnos : alumnos, profesores : profesores, asignaturas : asignaturas });
+    const profesores = await Profesores.find().lean();
+    res.render("index", { alumnos : alumnos, asignaturas : asignaturas, profesores: profesores });
   };
 
 
