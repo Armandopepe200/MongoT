@@ -1,1 +1,11 @@
+
+#Modulos o dependencias de Node
+
 node_modules
+
+
+#Carpeta Del Proyecto Construida
+proyecto
+
+#Rutas de variables de entorno
+.env
